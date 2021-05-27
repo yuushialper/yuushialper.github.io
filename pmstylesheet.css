@@ -112,15 +112,15 @@ img:active {
   color-scheme: light dark;
 }
 #HowToDo {
- background-color: #3399ff;
-  posigtion: fixed; /* Make it stick/fixed */
+  background-color: #3399ff;
+  position: fixed; /* Make it stick/fixed */
   width: 100%;
-  /* Can add a transition effect when sliding downwards and upwards, but I do not think that it is necessary.  The code is 'transition: top 0.3s;' */
+  transition: top 0.3s; /* Transition effect when sliding */
 }
 /* Stylising the links */
 #HowToDo a {
   float: left;
-  display: block;
+  display: inline-block;
   color: white;
   text-align: center;
   padding: 15px;
