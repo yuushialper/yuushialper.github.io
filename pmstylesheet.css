@@ -126,6 +126,10 @@ img:active {
   padding: 15px;
   text-decoration: none;
 }
-#navbar a:hover{
+#HowToDo a:hover{
   background-color: #00aa00;
+}
+#HowToDo a.active {
+  background-color: #80bfff;
+  color: Gold;
 }
