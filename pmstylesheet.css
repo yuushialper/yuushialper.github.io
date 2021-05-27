@@ -39,7 +39,7 @@ li a:hover.nav {
   text-decoration: underline;
   font-weight: bolder;
 }
-.萓九�邂ｱ {
+.例の箱 {
   border: 1px solid black;
   background-color: #e6e6e6;
   width: auto;
@@ -54,23 +54,23 @@ li a:hover.nav {
   margin-bottom: 7px;
 }
 @media (prefers-color-scheme: dark) {
-  .萓九�邂ｱ {
+  .例の箱 {
     border: 1px solid white;
     background-color: #3399ff;
   }
-  .螳夂ｾｩ邂ｱ {
+  .定義箱 {
     background-color: #100aaa;
   }
-  .隕∫ｴ� {
+  .要約 {
     border: 1px solid white;
     background-color: #00aa00;
   }
 }
-.螳夂ｾｩ邂ｱ {
+.定義箱 {
   background-color: #e6e6e6;
   white-space: nowrap;
 }
-.隕∫ｴ� {
+.要約 {
   border: 1px solid black;
   background-color: ivory;
   width: auto;
