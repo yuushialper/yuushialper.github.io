@@ -120,7 +120,7 @@ img:active {
 /* Stylising the links */
 #HowToDo a {
   float: left;
-  display: inline-block;
+  display: block;
   color: white;
   text-align: center;
   padding: 15px;
