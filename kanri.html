@@ -84,6 +84,17 @@
       <h1 id="Step11">Step 11:&nbsp;&nbsp;Re-Adjust the Plan</h1>
       <h1 id="Step12">Step 12:&nbsp;&nbsp;Review</h1>
     </div> <!-- 残りの終末 -->
-    <script src="howto.js"></script>
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPoss = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("HowToDo").style.top = "0";
+      } else {
+        document.getElementById("HowToDo").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
   </body>
 </html
