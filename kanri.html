@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="pmstylesheet.css">
   </head>
   <body>
-    <div id="HowToDo" lang="ja"><!-- Navigation Menu -->
+    <div id="navbar" lang="ja"><!-- Navigation Menu -->
       <a href="yuushialper.github.io">時計と用事一覧に戻る</a>
       <a href="yuushialper.github.io/kanri.html" class="active">企画管理</a>
       <a href="yuushialper.github.io/gantt.html">ガント表</a>
@@ -87,14 +87,14 @@
     <script>
       var prevScrollpos = window.pageYOffset;
       window.onscroll = function() {
-        var currentScrollPoss = window.pageYOffset;
+      var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
-          document.getElementById("HowToDo").style.top = "0";
-      } else {
-        document.getElementById("HowToDo").style.top = "-50px";
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
       }
-      prevScrollpos = currentScrollPos;
-    }
     </script>
   </body>
 </html
