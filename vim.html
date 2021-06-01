@@ -1,0 +1,91 @@
+<DOCTYPE! html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title lang="ja">ヸム</title>
+    <meta name="description" content="易しくヸムについて学びましょう！">
+    <meta name="author" content="勇士　真勝">
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pmstylesheet.css">
+  </head>
+  <body>
+    <div id="navbar" lang="ja"><!-- Navigation Menu -->
+      <a href="index.html">時計と用事一覧に戻る</a>
+      <a href="kanri.html">企画管理</a>
+      <a href="gantt.html">ガント表</a>
+      <a href="coding.html">コーヂング</a>
+      <a href="vim.html" class="active">ヸム</a>
+    </div><!-- 終末 Navigation Menu -->
+    <div class="navbox"> <!-- navigation -->
+      <ul style="list-style-type: none;" class="nav">
+        <li><a class="nav" href="#General" lang="ja">一般</a></li>
+        <li><a class="nav" href="#Cursor">カーソルの移動</a></li>
+        <li><a class="nav" href="#Save">保存と読み込み</a></li>
+        <li><a class="nav" href="#Search">検索</a></li>
+        <li><a class="nav" href="#Delete">削除</a></li>
+        <li><a class="nav" href="#UnDo">元に戻す</a></li>
+        <li><a class="nav" href="#Visual">ヸジュアルモード</a></li>
+        <li><a class="nav" href="#CopyPaste">複写と貼り付け</a></li>
+        <!-- format:  <li><a class="nav" href="#id">TEXT</a></li> -->
+      </ul>
+    </div> <!-- end of navigation § -->
+    <div style="width: 85%; margin-top: 35px;"> <!-- 残りの書取 -->
+      <h1 id="General">一般
+        <ol class="two">
+          <li><span class="例の箱">ctrl-z</span>:  停止（<span class="例の箱">fg</span>で戻る）</li>
+        </ol>
+      <h1 id="Cursor">カーソルの移動</h1>
+        <ol class="two">
+          <li><span class="例の箱">ｈ</span>&emsp;左</li>
+          <li><span class="例の箱">ｊ</span>&emsp;下</li>
+          <li><span class="例の箱">ｋ</span>&emsp;上</li>
+          <li><span class="例の箱">ｌ</span>&emsp;右</li>
+          <li><span class="例の箱">ｗ</span>&emsp;次の単語</li>
+          <li><span class="例の箱">ｂ</span>&emsp;前の単語</li>
+          <li><span class="例の箱">ｃｔｒｌ</span><span class="例の箱">ｆ</span>&emsp;次のページ</li>
+          <li><span class="例の箱">ｃｔｒｌ</span><span class="例の箱">ｂ</span>&emsp;前のページ</li>
+          <li><span class="例の箱">^</span>&emsp;先頭</li>
+          <li><span class="例の箱">＄</span>&emsp;<ruby>末<rt>ﾏﾂ</rt>尾<rt>ﾋﾞ</rt></ruby></li>
+          <li><span class="例の箱">ｇ</span><span class="例の箱">ｇ</span>&emsp;ファイル先頭</li>
+          <li><span class="例の箱">Ｇ</span>&emsp;ファイル末尾</li>
+        </ol>
+      <h1 id="Save">保存と読み込みも</h1>
+        <ol class="two">
+          <li><span class="例の箱">：</span><span class="例の箱">ｗ</span><span class="例の箱">「ファイル名」入力</span>&emsp;ファイル保存</li>
+          <li><span class="例の箱">：</span><span class="例の箱">ｅ</span><span class="例の箱">「ファイル名」記入</span>&emsp;ファイル読み込み</li>
+        </ol>
+      <h1 id="Search">検索</h1>
+        <ol class="two">
+          <li>コマンドモードで<span class="例の箱">／</span>&emsp;検索</li>
+          <li>検索中に<span class="例の箱">ｎ</span>&emsp;次のキーワードに移動</li>
+          <li>検索中に<span class="例の箱">Ｎ</span>&emsp;前のキーワードに移動</li>
+          <li><span class="例の箱">：</span><span class="例の箱">ｎ</span><span class="例の箱">ｏ</span><span class="例の箱">ｈ</span>&emsp;<ruby>蛍<rt>ｹｲ</rt>光<rt>ｺｳ</rt></ruby></li>
+        </ol>
+      <h1 id="Delete">削除</h1>
+        <ol class="two">
+          <li><span class="例の箱">ｘ</span>&emsp;カーソルの下に在る文字を削除</li>
+          <li><span class="例の箱">ｄ</span><span class="例の箱"></li>
+        </ol>
+      <h1 id="UnDo">元に戻す</h1>
+      <h1 id="Visual"><ruby>ビジュアル<rt>ヸジュアル</rt></ruby>モード</h1>
+      <h1 id="CopyPaste"><ruby>複<rt>ﾌｸ</rt>写<rt>ｼｬ</rt></ruby>と<ruby>貼<rt>ﾊ</rt></ruby>り<ruby>付<rt>ﾂ</rt></ruby>け</h1>
+        <ol class="two">
+          <li><span class="例の箱">ｄ</span>&emsp;切り取り</li>
+          <li><span class="例の箱">ｙ</span>&emsp;複写</li>
+          <li><span class="例の箱">ｐ</span>&emsp;貼り付け</li>
+        </ol>
+    </div> <!-- 残りの終末 -->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    </script>
+  </body>
+</html
