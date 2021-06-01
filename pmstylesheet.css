@@ -53,6 +53,19 @@ li a:hover.nav {
   vertical-align: text-top;
   margin-bottom: 7px;
 }
+.例の箱2 {
+  border: 1px solid black;
+  background-color: #e6e6e6;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  position: relative;
+  display: inline-block;
+  height: auto;
+  vertical-align: baseline;
+  margin-bottom: 7px;
 @media (prefers-color-scheme: dark) {
   .例の箱 {
     border: 1px solid white;
@@ -82,8 +95,7 @@ li a:hover.nav {
   display: inline-block;
   height: auto;
   vertical-align: text-top;
-  margin-bottom: 7px;:w
-
+  margin-bottom: 7px;
 }
 div.navbox {
   float: right;
