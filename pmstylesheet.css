@@ -119,6 +119,7 @@ img:active {
   top: 0;
   display: inline-block;
   transition: top 0.3s; /* Transition effect when sliding */
+  z-index: 100;
 }
 /* Stylising the links */
 #navbar a {
