@@ -66,6 +66,7 @@ li a:hover.nav {
   height: auto;
   vertical-align: baseline;
   margin-bottom: 7px;
+}
 @media (prefers-color-scheme: dark) {
   .例の箱 {
     border: 1px solid white;
