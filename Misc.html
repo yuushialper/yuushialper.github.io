@@ -1,0 +1,37 @@
+<DOCTYPE! html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title lang="ja">コーヂング索引</title>
+    <meta name="description" content="コーヂングについて学びましょう！">
+    <meta name="author" content="勇士　真勝">
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pmstylesheet.css">
+  </head>
+  <body>
+    <div id="navbar" lang="ja"><!-- Navigation Menu -->
+      <a href="index.html">時計と用事一覧に戻る</a>
+      <a href="kanri.html">企画管理</a>
+      <a href="gantt.html">ガント表</a>
+      <a href="coding.html">コーヂング</a>
+      <a href="Japanese.html">日本語</a>
+      <a href="Misc.html" class="active">その他</a>
+    </div><!-- 終末 Navigation Menu -->
+    <div style="width: 85%; margin-top: 37px;"> <!-- 残りの書取 -->
+      <h1><a href="contractdrafting.html">契約起草</a></h1>
+      <h1><a href="vocabulary.html">良い単語（言語は英語と西語丈で有り</a></h1>
+    </div> <!-- 残りの終末 -->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    </script>
+  </body>
+</html>
