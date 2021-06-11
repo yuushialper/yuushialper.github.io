@@ -113,7 +113,7 @@ div.navbox {
   overflow: auto;
 }
 img {
-  max-width: 80%;
+  max-width: 50%;
   height: auto;
   cursor: zoom-in;
   margin-top: 15px;
