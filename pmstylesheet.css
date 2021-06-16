@@ -20,6 +20,9 @@ ol.five {
 ol.six {
   list-style-type: upper-roman;
 }
+ol.seven {
+  list-style-type: lower-roman;
+}
 ul.nav {
   list-style-type: none;
   margin: 0;
