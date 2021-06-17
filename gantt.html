@@ -1,81 +1,115 @@
 <DOCTYPE! html>
-<html lang="en-GB">
-  <head>
-    <meta charset="utf-8">
-    <title lang="ja">ガント表作成方法</title>
-    <meta name="description" content="ガント表の作り方を節回します。">
-    <meta name="author" content="勇士　真勝">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pmstylesheet.css">
-  </head>
-  <body>
-    <div id="navbar" lang="ja"><!-- Navigation Menu -->
-      <a href="index.html">時計と用事一覧に戻る</a>
-      <a href="kanri.html">企画管理</a>
-      <a href="gantt.html" class="active">ガント表</a>
-      <a href="coding.html">コーヂング</a>
-      <a href="Japanese.html">日本語</a>
-      <a href="Misc.html">その他</a>
-    </div><!-- 終末 Navigation Menu -->
-    <div class="navbox"> <!-- navigation -->
-      <ul style="list-style-type: none;" class="nav">
-        <li><a class="nav" href="#Constructing">Constructing Gantt Chart</a></li>
-	<ul class="nav">
-	  <li><a class="nav" href="#CritPath">&emsp;Critical Path</a></li>
-	</ul>
-	<li><a class="nav" href="#OptimumResults">Using for Optimum Results</a></li>
-      </ul>
-    </div> <!-- navigation -->
-    <div style="width: 85%; margin-top: 35px;"> <!-- 残りの書取 -->
-      <h1 id="Constructing">Constructing Gantt Charts</h1>
-        <h2 id="CritPath">Critical Path</h2>
-        <ol class="one">
-	  <li>1<sup>st</sup> step is to put in <strong>critical path</strong></li>
-	  <ol class="two">
-	    <li><strong class="定義箱">Critical path</strong>:&nbsp;&nbsp;the <em>longest</em> sequence of activities in a project that must be completed <strong style="color: red"><em>on time</em></strong>.</li>
-	    <li>Can be trivial (<span lang="ja">例：</span>&nbsp;routine paper-work can be on a critical path), whilst expensive &amp; imp. things exist that &ne; on critical path).</li>
-	    <li>Need critical path before creating <span lang="ja">ガント表</span></li>
-	    <li>Always drawn coming down in steps:</li>
-	    <ol style="list-style-type: none">
-	      <li><img src="https://web.archive.org/web/20210526184125im_/https://i1.wp.com/www.chriscroft.co.uk/wp-content/uploads/Screenshot-2021-05-07-at-12.02.19.png?resize=1024%2C411&ssl=1" alt="go to https://web.archive.org/web/20210526184125/https://www.chriscroft.co.uk/critical-paths-and-gantt-charts-why-you-need-both/" style="vertical-align: middle;"></li>
-	    </ol>
-	    <li>1 of reasons wherefore use steps is to show <strong>slippage</strong>:&nbsp;&nbsp;what actually happened <i>contra</i> what should have happened</li>
-	    <ol class="three">
-	      <li>Do not want there to be slippage on critical path &because; anything going late on there means that every-thing else &rarr; late.</li>
-	    </ol>
-	  <li>However, 1<sup>st</sup> must discover critical path.</li>
-	  <ol class="three">
-	    <li>Best method to obtain <em>critical path</em> is to use a <strong>network diagram</strong></li>
-	    <ol style="list-style-type: none">
-	      <li><img style="vertical-align: middle;" src="https://web.archive.org/web/20210526184125im_/https://i0.wp.com/www.chriscroft.co.uk/wp-content/uploads/Screenshot-2021-05-07-at-11.54.42.png?resize=1024%2C453&ssl=1" alt="Go to https://web.archive.org/web/20210526184125im_/https://i0.wp.com/www.chriscroft.co.uk/wp-content/uploads/Screenshot-2021-05-07-at-11.54.42.png?resize=1024%2C453&ssl=1"></li>
-	      <ol style="list-style-type: none"><li>Source:&nbsp;&nbsp;<a href="https://web.archive.org/web/20210526184125/https://www.chriscroft.co.uk/critical-paths-and-gantt-charts-why-you-need-both/" target="_blank">Chris Croft Training</a></li></ol>
-	    </ol>
-	    <li>Find <em>critical path</em> by adding up the times as you go across.</li>
-	    <ol class="four"><li><em style="color: DarkRed">Remember</em>:&nbsp;&nbsp;The critical path is the path with the longest times.</li></ol>
-	  </ol>
-	  <li>If there is a task that can be overlapped with another on the <span class="定義箱">critical path</span>, then attempt to break the 1<sup>st</sup> one down a bit so that you can know when to begin the 2<sup>nd</sup> task.</li>
-	  <ol class="three"><li>In so doing, you make the over-lap period as clear as possible</li></ol>
-    <li>If there are 2 critical paths (there are 2 equal longest paths in the network diagramme), then add one right below the other</li>
-	  </ol>
-	  <li></li>
+	<html lang="en-GB">
+
+	<head>
+		<meta charset="utf-8">
+		<title lang="ja">ガント表作成方法</title>
+		<meta name="description" content="ガント表の作り方を節回します。">
+		<meta name="author" content="勇士　真勝">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="pmstylesheet.css"> </head>
+
+	<body>
+		<div id="navbar" lang="ja">
+			<!-- Navigation Menu --><a href="index.html">時計と用事一覧に戻る</a> <a href="kanri.html">企画管理</a> <a href="gantt.html" class="active">ガント表</a> <a href="coding.html">コーヂング</a> <a href="Japanese.html">日本語</a> <a href="Misc.html">その他</a> </div>
+		<!-- 終末 Navigation Menu -->
+		<div class="navbox">
+			<!-- navigation -->
+			<ul style="list-style-type: none;" class="nav">
+				<li><a class="nav" href="#Constructing">Constructing Gantt Chart</a></li>
+				<ul class="nav">
+					<li><a class="nav" href="#CritPath">&emsp;Critical Path</a></li>
+          <li><a class="nav" href="#Contingency">&emsp;Contingency</a></li>
+          <li><a class="nav" href="#Granularity">&emsp;Granularity</a></li>
+				</ul>
+				<li><a class="nav" href="#OptimumResults">Using for Optimum Results</a></li>
+			</ul>
+		</div>
+		<!-- navigation -->
+		<div style="width: 85%; margin-top: 35px;">
+			<!-- 残りの書取 -->
+			<h1 id="Constructing">Constructing Gantt Charts</h1>
+			<h2 id="CritPath">Critical Path</h2>
+			<ol class="one">
+				<li>1<sup>st</sup> step is to put in <strong>critical path</strong></li>
+				<ol class="two">
+					<li><strong class="定義箱">Critical path</strong>:&nbsp;&nbsp;the <em>longest</em> sequence of activities in a project that must be completed <strong style="color: red"><em>on time</em></strong>.</li>
+					<li>Can be trivial (<span lang="ja">例：</span>&nbsp;routine paper-work can be on a critical path), whilst expensive &amp; imp. things exist that &ne; on critical path).</li>
+					<li>Need critical path before creating <span lang="ja">ガント表</span></li>
+					<li>Always drawn coming down in steps:</li>
+					<ol style="list-style-type: none">
+						<li><img src="https://web.archive.org/web/20210526184125im_/https://i1.wp.com/www.chriscroft.co.uk/wp-content/uploads/Screenshot-2021-05-07-at-12.02.19.png?resize=1024%2C411&ssl=1" alt="go to https://web.archive.org/web/20210526184125/https://www.chriscroft.co.uk/critical-paths-and-gantt-charts-why-you-need-both/" style="vertical-align: middle;"></li>
+					</ol>
+					<li>1 of reasons wherefore use steps is to show <strong>slippage</strong>:&nbsp;&nbsp;what actually happened <i>contra</i> what should have happened</li>
+					<ol class="three">
+						<li>Do not want there to be slippage on critical path &because; anything going late on there means that every-thing else &rarr; late.</li>
+					</ol>
+					<li>However, 1<sup>st</sup> must discover critical path.</li>
+					<ol class="three">
+						<li>Best method to obtain <em>critical path</em> is to use a <strong>network diagram</strong></li>
+						<ol style="list-style-type: none">
+							<li><img style="vertical-align: middle;" src="https://web.archive.org/web/20210526184125im_/https://i0.wp.com/www.chriscroft.co.uk/wp-content/uploads/Screenshot-2021-05-07-at-11.54.42.png?resize=1024%2C453&ssl=1" alt="Go to https://web.archive.org/web/20210526184125im_/https://i0.wp.com/www.chriscroft.co.uk/wp-content/uploads/Screenshot-2021-05-07-at-11.54.42.png?resize=1024%2C453&ssl=1"></li>
+							<ol style="list-style-type: none">
+								<li>Source:&nbsp;&nbsp;<a href="https://web.archive.org/web/20210526184125/https://www.chriscroft.co.uk/critical-paths-and-gantt-charts-why-you-need-both/" target="_blank">Chris Croft Training</a></li>
+							</ol>
+						</ol>
+						<li>Find <em>critical path</em> by adding up the times as you go across.</li>
+						<ol class="four">
+							<li><em style="color: DarkRed">Remember</em>:&nbsp;&nbsp;The critical path is the path with the longest times.</li>
+						</ol>
+					</ol>
+					<li>If there is a task that can be overlapped with another on the <span class="定義箱">critical path</span>, then attempt to break the 1<sup>st</sup> one down a bit so that you can know when to begin the 2<sup>nd</sup> task.</li>
+					<ol class="three">
+						<li>In so doing, you make the over-lap period as clear as possible</li>
+						<li><img style="vertical-align: middle;" src="<!-- img 2 -->"></li>
+					</ol>
+					<li>If there are 2 critical paths (there are 2 equal longest paths in the network diagramme), then add one right below the other</li>
+					<ol class="three">
+						<li><img style="vertical-align: middle;" src="<!-- img 1 -->"></li>
+					</ol>
+				</ol>
+			</ol>
+      <h2 id="Contingency">Estimating Times &amp; Adding Contingency</h2>
+      <ol class="one">
+        <li><u>See</u><span lang="ja"><a href="https://yuushialper.github.io/kanri.html#LvlGran">企画管理</a></span></li>
+        <li>Always spread the amt. of contingency time thro'out the criticla path, adding a little bit to each task, &because; do not know where the problems will 'crop up'</li>
+        <li>Add the contingency when you convert the <strong>Network Diagramme</strong> to a Gantt Chart</li>
+        <li>Risks:</li>
+        <ol class="two">
+          <li>If you have many 1-day or 1-week tasks</li>
+          <ol class="three">
+            <li>Unlikely to happen</li>
+            <li>In normal organisations, things are unlikely to hapeen in such a manner</li>
+            <li>Altho' you may have s/t that just happens in 1 day, if you have several in a row, it is unlikely to take that day-by-day time-span (from experience, I agree。例えば、期末試験の為に勉強してた時に、そんなうまく行かなかった。笑汗)</li>
+          </ol>
+          <li>If your floating tasks are nearly critical, to wit, are expected to take nearly as as long as the tasks on the critical path, such cosntitutes a point of risk upon which you will want to keep your eye</li>
+          <li>If your plan has many short tasks at the end, s/t is likely to go wrong at some pt. in your project, &amp; then you may be faced w/ rushing at the end, but if you already have many small/short tasks at the end, it is not going to be possible to 'crash' anything to get back on track &because; the tasks are already v. short</li>
+          <ol class="three">
+            <li>&therefore; you will want to add a couple of tasks to a plan that is similar to the following:</li>
+            <ol class="four"><li><img style="vertical-align: middle;" src="<!-- img 3 -->"></li</ol>
+          </ol>
         </ol>
-      <hr>
-      <h1 id="OptimumResults">Using Gantt Charts for Optimum Results</h1>
-        <ol class="one">
-          <li></li>
-	</ol>
-    </div> <!-- 残りの書取 -->
-    <script>
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("navbar").style.top = "0";
-        } else {
-          document.getElementById("navbar").style.top = "-50px";
-        }
-        prevScrollpos = currentScrollPos;
-      }
-    </script>
-  </body>
-</html>
+      </ol>
+      <h2 id="Granularity">Deciding Level of Granularity</h2>
+			<hr>
+			<h1 id="OptimumResults">Using Gantt Charts for Optimum Results</h1>
+			<ol class="one">
+				<li></li>
+			</ol>
+		</div>
+		<!-- 残りの書取 -->
+		<script>
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			if(prevScrollpos > currentScrollPos) {
+				document.getElementById("navbar").style.top = "0";
+			} else {
+				document.getElementById("navbar").style.top = "-50px";
+			}
+			prevScrollpos = currentScrollPos;
+		}
+		</script>
+	</body>
+
+	</html>
