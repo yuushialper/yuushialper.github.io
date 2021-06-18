@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="pmstylesheet.css">
   </head>
   <body>
+    <!-- https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp -->
     <div id="navbar" lang="ja"><!-- Navigation Menu -->
       <a href="index.html">時計と用事一覧に戻る</a>
       <a href="kanri.html" class="active">企画管理</a>
