@@ -1,0 +1,45 @@
+<DOCTYPE! html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>引っ越し用事や買いたい事等一覧</title>
+    <meta name="description" content="易しく企画管理について学びましょう！">
+    <meta name="author" content="勇士　真勝">
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pmstylesheet.css">
+  </head>
+  <body>
+    <!-- https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp -->
+    <div id="navbar" lang="ja"><!-- Navigation Menu -->
+      <a href="index.html">時計と用事一覧に戻る</a>
+      <a href="kanri.html">企画管理</a>
+      <a href="gantt.html">ガント表</a>
+      <a href="coding.html">コーヂング</a>
+      <a href="Japanese.html">日本語</a>
+      <a href="Misc.html">その他</a>
+      <a href="hikkoshi.html" class="active">引っ越し用事や買いたい事等一覧</a>
+    </div><!-- 終末 Navigation Menu -->
+    <div class="navbox"> <!-- navigation -->
+      <ul style="list-style-type: none;" class="nav">
+        <li><a class="nav" href="#Summary" lang="ja">要約</a></li>
+        <li><a class="nav" href="#Step1">Step 1:&nbsp;&nbsp;Define</a></li>
+        <!-- format:  <li><a class="nav" href="#id">TEXT</a></li> -->
+      </ul>
+    </div> <!-- end of navigation § -->
+    <div style="width: 85%; margin-top: 35px;"> <!-- 残りの書取 -->
+      <h1 id="Summary" lang="ja">要約</h1>
+    </div> <!-- 残りの終末 -->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    </script>
+  </body>
+</html>
