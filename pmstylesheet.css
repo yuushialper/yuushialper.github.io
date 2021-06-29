@@ -157,7 +157,8 @@ img:active {
 }
 table.glossry {
   border: 1px solid black;
-  line-height: 1.5
+  line-height: 1.5;
+  width: 98%;
 }
 .gloh {
   background-color: LimeGreen;'
@@ -178,4 +179,5 @@ table.glossry {
 .gloi {
   padding: 3px;
   background-color: background-color: rgb(219, 212, 212);
+  text-align: center;
 }
