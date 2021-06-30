@@ -195,3 +195,9 @@ table.glossry {
 .green {
   color: green;
 }
+span.istrikeu {
+  color: initial;
+}
+s.istrike {
+  text-decoration: line-through underline overline;
+}
