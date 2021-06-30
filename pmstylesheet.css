@@ -189,3 +189,9 @@ table.glossry {
   max-width: 17em;
   veritcal-align: top;
 }
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
