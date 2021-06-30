@@ -201,3 +201,7 @@ span.istrikeu {
 s.istrike {
   text-decoration: line-through underline overline;
 }
+.yes {
+  color: LimeGreen;
+  font-weight: bolder;
+  /* 「&#9678;」か「&#25CE;」か用いる。 */
