@@ -161,10 +161,11 @@ table.glossry {
   width: 98%;
 }
 .gloh {
-  background-color: LimeGreen;'
+  background-color: LimeGreen;
 }
 .glo {
   padding: 3px;
+  vertical-align: top;
 }
 .glo1 {
   background-color: #f1f1f1f1;
@@ -175,9 +176,16 @@ table.glossry {
 .glox {
   padding: 3px;
   text-align: center;
+  min-width: 5em;
+  vertical-align: top;
 }
 .gloi {
   padding: 3px;
-  background-color: background-color: rgb(219, 212, 212);
   text-align: center;
+  vertical-align: top;
+}
+.glor {
+  padding: 3px;
+  max-width: 17em;
+  veritcal-align: top;
 }
