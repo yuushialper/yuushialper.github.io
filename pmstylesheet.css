@@ -205,3 +205,20 @@ s.istrike {
   color: LimeGreen;
   font-weight: bolder;
   /* 「&#9678;」か「&#25CE;」か用いる。 */
+}
+table.conj {
+  border: 1px solid black;
+  line-height: 1.5;
+  width: 98%
+}
+table.conj th {
+  padding: 3px;
+  text-align: center;
+}
+table.conj tbody tr:nth-child(2n+1) {
+ background-color: #f1f1f1f1;
+}
+table.conj tbody td {
+  padding: 3px;
+  /*vertical-align: top;*/
+}
