@@ -234,4 +234,11 @@ table.conj tbody td {
 .fn:visited {
   color: inherit;
 }
+.larrhk {
+  color: initial;
+  text-decoration: none;
+}
+.larrhk:hover {
+  text-decoration: underline;
+}
 /*&larrhk;*/
