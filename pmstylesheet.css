@@ -231,3 +231,6 @@ table.conj tbody td {
 .conjs {
   border-bottom: 0.8px solid black;
 }
+.fn:visited {
+  color: inherit;
+}
