@@ -1,0 +1,59 @@
+<DOCTYPE! html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>引っ越し用事や買いたい事等一覧</title>
+    <meta name="description" content="引っ越しする途中にやらなければならない事、、とか。">
+    <meta name="author" content="勇士　真勝">
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pmstylesheet.css">
+    <style>
+      .info {
+        flex-direction:row;/*https://www.w3.org/TR/css-flexbox-1/#flex-item*/
+	width: 33.33%;
+      }
+      iframe {border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp -->
+    <!-- https://web.dev/prefers-color-scheme/ -->
+    <!-- https://kevdees.com/adding-dark-mode-toggle-to-your-website/ -->
+    <div id="navbar" lang="ja"><!-- Navigation Menu -->
+      <a href="index.html">時計と用事一覧に戻る</a>
+      <a href="kanri.html">企画管理</a>
+      <a href="gantt.html">ガント表</a>
+      <a href="coding.html">コーヂング</a>
+      <a href="Japanese.html">日本語</a>
+      <a href="Misc.html">その他</a>
+      <a href="exercise.html" class="active">運動</a>
+    </div><!-- 終末 Navigation Menu -->
+    <div class="navbox"> <!-- navigation -->
+      <ul style="list-style-type: none;" class="nav">
+        <li><a class="nav" href="#morning">朝</a></li>
+        <li><a class="nav" href="#afternoon">午後</a></li>
+        <!-- format:  <li><a class="nav" href="#id">TEXT</a></li> -->
+      </ul>
+    </div> <!-- end of navigation § -->
+    <div style="width: 85%; margin-top: 35px;"> <!-- 残りの書取 -->
+      <h1>運動動画</h1>
+        <ol>
+        <h2 id="morning">朝</h2>
+          <ol>
+            <iframe class="info" src="https://www.youtube-nocookie.com/embed/o2hCKxUxEys?rel=0&modestbranding=1&showinfo=0&fs=1&controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><br><br>
+            <iframe class="info" src="https://www.youtube-nocookie.com/embed/Rumt09huozk?rel=0&modestbranding=1&showinfo=0&fs=1&controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><br>
+          </ol>
+        <h2 id="afternoon">午後</h2>
+          <ol>
+            <iframe class="info" src="https://www.youtube-nocookie.com/embed/ouvnnMgvPs4?rel=0&modestbranding=1&showinfo=0&fs=1&controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><br><br>
+            <iframe class="info" src="https://www.youtube-nocookie.com/embed/Uv0inbqv7lw?rel=0&modestbranding=1&showinfo=0&fs=1&controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><br><br>
+            <iframe class="info" src="https://www.youtube-nocookie.com/embed/JX6IvMyqVk8?rel=0&modestbranding=1&showinfo=0&fs=1&controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe><br>
+          </ol>
+        </ol>
+    </div> <!-- 残りの終末 -->
+  </body>
+</html>
