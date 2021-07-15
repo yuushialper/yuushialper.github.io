@@ -196,10 +196,13 @@ table.glossry {
   color: green;
 }
 span.istrikeu {
-  color: initial;
+  color: red;
+  font-weight: normal;
 }
 s.istrike {
   text-decoration: line-through underline overline;
+  color: rgb(256,159,81);
+  font-weight: bold;
 }
 .yes {
   color: LimeGreen;
