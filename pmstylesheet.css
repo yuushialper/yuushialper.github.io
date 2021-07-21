@@ -201,6 +201,7 @@ table.glossry {
 .limebox {
   border: 1px solid LimeGreen;
   padding: 5px;
+  margin-top: 3px;
 }
 span.istrikeu {
   color: red;
