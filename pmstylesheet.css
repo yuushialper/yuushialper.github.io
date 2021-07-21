@@ -198,6 +198,10 @@ table.glossry {
 .limegreen {
   color: LimeGreen;
 }
+.limebox {
+  border: 1px solid LimeGreen;
+  padding: 5px;
+}
 span.istrikeu {
   color: red;
   font-weight: normal;
