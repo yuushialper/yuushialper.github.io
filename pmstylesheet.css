@@ -207,7 +207,7 @@ s.istrike {
 .yes {
   color: LimeGreen;
   font-weight: bolder;
-  /* 「&#9678;」か「&#25CE;」か用いる。 */
+  /* 「&#9678;」か「&#25CE;」か用いる 、、じゃなくて、「&#9673;」を用いれ */
 }
 table.conj {
   border: 1px solid black;
