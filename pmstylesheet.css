@@ -245,3 +245,13 @@ table.conj tbody td {
   text-decoration: underline;
 }
 /*&larrhk;*/
+
+/* How to make arrow:
+&emsp;&emsp;&emsp;<b class="long-arrow"></b>&emsp;&emsp;&emsp; */
+.long-arrow {
+  display: inline-block;
+  -webkit-transform: scale(5,3);
+  -moz-transform: scale(5,3);
+  -o-transform: scale(5,3);
+  transform: scale(5,3);
+}
