@@ -195,6 +195,9 @@ table.glossry {
 .green {
   color: green;
 }
+.limegreen {
+  color: LimeGreen;
+}
 span.istrikeu {
   color: red;
   font-weight: normal;
