@@ -263,3 +263,6 @@ table.conj tbody td {
   -o-transform: scale(5,3);
   transform: scale(5,3);
 }
+.highlight {
+  background-color: #FFFF00
+}
