@@ -271,3 +271,9 @@ table.conj tbody td {
 .h {
   background-color: #FFFF00
 }
+.bh {
+  background-color: rgba(0,197,255,.16);
+}
+.ph {
+  background-color: rgba(171,54,255,.16);
+}
