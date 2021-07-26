@@ -226,6 +226,7 @@ s.istrike {
   color: red;
   font-weight: bolder;
 }
+/* 「&#10060;」ですが、それが駄目なら「&#10007;」を使おう、、じゃなくて、「&#10006;」を用いれ。 */
 table.conj {
   border: 1px solid black;
   line-height: 1.5;
