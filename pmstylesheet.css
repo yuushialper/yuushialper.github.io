@@ -203,6 +203,11 @@ table.glossry {
   padding: 5px;
   margin-top: 3px;
 }
+.bluebox {
+  border: 2px solid rgb(0,52,144);
+  padding: 5px;
+  margin-top: 3px;
+}
 span.istrikeu {
   color: red;
   font-weight: normal;
