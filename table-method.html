@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="file:///Users/yuushimasakatsu/Downloads/pmstylesheet.css">
+    </head>
+    <body>
+      <table class="conj">
+        <thead>
+          <tr style="background-color: rgb(0, 174, 255);">
+            <th scope="col">hola</th>
+            <th scope="col">もっと文字</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>a</td>
+            <td>w</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+      <h3>スタイルシート</h3>
+      <ul>
+        <li><span class="red">「red」</span>。</li>
+        <ul>
+          <li>例の中に勉強中の文法です。</li>
+          <li>説明を書いてて、取消線を示す為</li>
+          <li>強調したい際</li>
+        </ul>
+        <li><span class="exampleblue">例の色</span>が<span class="exampleblue">「exampleblue」</span></li>
+        <li><span class="explanationblue">説明</span>が<span class="explanationblue">「explanationblue」</span></li>
+        <li><span class="green">文法構成</span>を示すのが<span class="green">「green」</span>。例：</li>
+        <ul>
+          <li><span class="green">疑問詞＋</span><span class="red">か</span><span class="green">＋助詞</span></li>
+        </ul>
+        <li><ruby>脚<rt>ｷｬｸ</rt>注<rt>ﾁｭｳ</rt></ruby>の作り方</li>
+        <ul>
+          <li>上部</li>
+          <ul>
+            <li>&lt;sup class="fn"&gt;&lt;a href="#fn[#]" id="ref[#]"&gt;[[#]]&lt;/a&gt;</li>
+          </ul>
+          <li>下部</li>
+          <ul>
+            <li>&lt;sup id="fn[#]"&gt;&lt;sup&gt;[#].&lt;/sup&gt;&amp;nbsp;文&amp;nbsp;&lt;a href="#ref[#]" title="ＦＮ[#]に戻る" class="larrhk"&gt;&lt;sup&gt;&amp;larrhk;&lt;/sup&gt;&lt;/a&gt;&lt;/sup&gt;&lt;br&gt;</li>
+          </ul>
+        </ul>
+        <li>画像</li>
+        <ul>
+          <li>&lt;img style="vertical-align: middle;" src=""&gt;</li>
+        </ul>
+        <li>数下線</li>
+        <ul>
+          <li>&lt;u style="border-bottom: double"&gt;文字&lt;/u&gt;</li>
+        </ul>
+        <li>取消線の作り方</li>
+        <ul>
+          <li>&lt;s class="istrike"&gt;&lt;span class="istrikueu"&gt;文&lt;/span&gt;&lt;/s&gt;</li>
+        </ul>
+        <li>矢印構成とその文の作り方</li>
+        <ul>
+          <li>&amp;emsp;&amp;emsp;&amp;emsp;&lt;b class="long-arrow exampleblue"&gt;&amp;rarr;&lt;/b&gt;&amp;emsp;&amp;emsp;&amp;emsp;</li>
+          <li>&lt;span class="yes"&gt;&amp;#9673;&lt;/span&gt;&amp;ensp;</li>
+          <li>&amp;emsp;&amp;emsp;&amp;emsp;&lt;b class="long-arrow exampleblue"&gt;&amp;rarr;&lt;/b&gt;&amp;emsp;&amp;emsp;&amp;emsp;&lt;span class="yes"&gt;&amp;#9673;&lt;/span&gt;&amp;ensp;</li>
+          <li>&lt;s class="istrike"&gt;&lt;span class="istrikueu"&gt;文&lt;/span&gt;&lt;/s&gt;&amp;emsp;&amp;emsp;&amp;emsp;&lt;b class="long-arrow exampleblue"&gt;&amp;rarr;&lt;/b&gt;&amp;emsp;&amp;emsp;&amp;emsp;&lt;span class="yes"&gt;&amp;#9673;&lt;/span&gt;&amp;ensp;</li>
+          <li><span class="exampleblue">先生、お茶<s class="istrike"><span class="istrikeu">欲しいですか</span></s>。&emsp;&emsp;&emsp;<b class="long-arrow exampleblue">&rarr;</b>&emsp;&emsp;&emsp;<span class="yes">&#9673;</span>&ensp;先生、お茶<span class="red"><ruby>如何<rt>ｲｶｶﾞ</rt></ruby>ですか</span>。</span></li>
+        </ul>
+        <li>箱の作り方</li>
+        <ul>
+          <li>&lt;span class="explanationblue limebox"&gt;文&lt;/span&gt;</li>
+          <li><span class="explanationblue limebox">疑問詞＋（助詞）＋も＋～ない</span></li>
+        </ul>
+        <li>蛍光の作り方</li>
+        <ul>
+          <li>我が方法：<span class="h">クラスが「h」</span></li>
+          <li>他の方法：<mark>「&lt;mark&gt;」</mark>。ですが、好きじゃない</li>
+        </ul>
+        <li>活用一覧表の作り方</li>
+        <ul>
+          <p>&lt;table class="conj"&gt;<br>
+            &emsp;&lt;thead&gt;<br>
+              &emsp;&emsp;&lt;tr style="background-color: rgb(0, 174, 255);"&gt;<br>
+                &emsp;&emsp;&emsp;&lt;th scope="col"&gt;hola&lt;/th&gt;<br>
+                &emsp;&emsp;&emsp;&lt;th scope="col"&gt;もっと文字&lt;/th&gt;<br>
+              &emsp;&emsp;&lt;/tr&gt;<br>
+            &emsp;&lt;/thead&gt;<br>
+            &emsp;&lt;tbody&gt;<br>
+              &emsp;&emsp;&lt;tr&gt;<br>
+                &emsp;&emsp;&emsp;&lt;td&gt;a&lt;/td&gt;<br>
+                &emsp;&emsp;&emsp;&lt;td&gt;w&lt;/td&gt;<br>
+              &emsp;&emsp;&lt;/tr&gt;<br>
+            &emsp;&lt;/tbody&gt;<br>
+          &lt;/table&gt;</p>
+          <p>
+            &lt;div id="hiteikeiconjtable"&gt;<br>
+              &emsp;&lt;table class="conj"&gt;<br>
+                &emsp;&emsp;&lt;tbody&gt;<br>
+                  &emsp;&emsp;&emsp;&lt;tr&gt;<br>
+                  &emsp;&emsp;&emsp;&emsp;&lt;th col="row" rowspan="2" class="conjs"&gt;形容詞&lt;/th&gt;<br>
+                  &emsp;&emsp;&emsp;&emsp;&lt;td&gt;&lt;span class="explanationblue">～くありません&lt;/span&gt;&lt;/th&gt;<br>
+                  &emsp;&emsp;&emsp;&emsp;&lt;td&gt;&lt;span class="exampleblue"&gt;大き&lt;/span&gt;&lt;span class="red"&gt;くありません&lt;/span&gt;&lt;/td&gt;<br>
+                  &emsp;&emsp;&emsp;&lt;/tr&gt;<br>
+                  &emsp;&emsp;&emsp;&lt;tr&gt;<br>
+                  &emsp;&emsp;&emsp;&emsp;&lt;td class="conjs"&gt;&lt;span class="explanationblue"&gt;～くないです&lt;/span&gt;&lt;/td&gt;<br>
+                  &emsp;&emsp;&emsp;&emsp;&lt;td class="conjs"&gt;&lt;span class="exampleblue"&gt;大き&lt;/span&gt;&lt;span class="red"&gt;くないです&lt;/span&gt;&lt;/td&gt;<br>
+                  &emsp;&emsp;&emsp;&lt;/tr&gt;<br>
+                  &emsp;&emsp;&emsp;&lt;tr&gt;<br>
+                  &emsp;&emsp;&emsp;&emsp;&lt;th col="row" rowspan="3"&gt;形容動詞と名詞&lt;/th&gt;<br>
+                  &emsp;&emsp;&emsp;&emsp;&lt;td class="explanationblue"&gt;～ではありません&lt;/td&gt;<br>
+                  &emsp;&emsp;&emsp;&emsp;&lt;td&gt;&lt;/td&gt;<br>
+                  &emsp;&emsp;&emsp;&lt;/tr&gt;<br>
+                  &emsp;&emsp;&emsp;&lt;tr&gt;<br>
+                  &emsp;&emsp;&emsp;&emsp;&lt;td class="explanationblue"&gt;～じゃありません&lt;/td&gt;<br>
+                  &emsp;&emsp;&emsp;&emsp;&lt;td&gt;&lt;/td&gt;<br>
+                  &emsp;&emsp;&emsp;&lt;/tr&gt;<br>
+                  &emsp;&emsp;&emsp;&lt;tr&gt;<br>
+                  &emsp;&emsp;&emsp;&emsp;&lt;td class="explanationblue"&gt;～じゃないです&lt;/td&gt;<br>
+                  &emsp;&emsp;&emsp;&emsp;&lt;td&gt;&lt;/td&gt;<br>
+                  &emsp;&emsp;&emsp;&lt;/tr&gt;<br>
+                &emsp;&emsp;&lt;/tbody&gt;<br>
+              &emsp;&lt;/table&gt;<br>
+            &lt;br&gt;<br>
+            &lt;/div&gt;
+          </p>
+          <div id="hiteikeiconjtable">
+            <table class="conj">
+              <tbody>
+                <tr>
+                  <th col="row" rowspan="2" class="conjs">形容詞</th>
+                  <td><span class="explanationblue">～くありません</span></th>
+                  <td><span class="exampleblue">大き</span><span class="red">くありません</span></td>
+                </tr>
+                <tr>
+                  <td class="conjs"><span class="explanationblue">～くないです</span></td>
+                    <td class="conjs"><span class="exampleblue">大き</span><span class="red">くないです</span></td>
+                </tr>
+                <tr>
+                  <th col="row" rowspan="3">形容動詞と名詞</th>
+                  <td class="explanationblue">～ではありません</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="explanationblue">～じゃありません</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="explanationblue">～じゃないです</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+          </div>
+        </ul>
+      </ul>
+    </body>
+</html>
