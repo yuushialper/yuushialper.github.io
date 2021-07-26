@@ -222,6 +222,10 @@ s.istrike {
   font-weight: bolder;
   /* 「&#9678;」か「&#25CE;」か用いる 、、じゃなくて、「&#9673;」を用いれ */
 }
+.wrong {
+  color: red;
+  font-weight: bolder;
+}
 table.conj {
   border: 1px solid black;
   line-height: 1.5;
