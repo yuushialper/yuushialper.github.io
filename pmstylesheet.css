@@ -285,6 +285,10 @@ table.conj tbody td {
 .gh {
   background: rgba(0,255,0,.178);
 }
+.ghb { /* the "b" stands for 'box', so together, "ghb" stands for 'green highlight & box' */
+  background: rgba(0,255,0,.178);
+  border: 1px solid limegreen;
+}
 .orange {
   color: rgb(255,139,0)
 }
